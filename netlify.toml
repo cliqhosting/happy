@@ -1,13 +1,8 @@
 [build]
-command: npm run build
-commandOrigin: config
-publish: /opt/build/repo/public
-publishOrigin: config
+command = "npm run build"
+commandOrigin = config
+publish = /opt/build/repo/public
+publishOrigin = config
 
 [[plugins]]
-6:58:41 PM:     - inputs: {}
-6:58:41 PM:       origin: config
-6:58:41 PM:       package: '@netlify/plugin-gatsby'
-6:58:41 PM:     - inputs: {}
-6:58:41 PM:       origin: ui
-6:58:41 PM:       package: netlify-plugin-gatsby-cache
+package = '@netlify/plugin-gatsby'

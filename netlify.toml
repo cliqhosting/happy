@@ -1,8 +1,6 @@
 [build]
 command = "npm run build"
-commandOrigin = "config"
-publish = "/opt/build/repo/public"
-publishOrigin = "config"
+publish = "/opt/build/repo/public/"
 
 [[plugins]]
-package = '@netlify/plugin-gatsby'
+package = "@netlify/plugin-gatsby"

